@@ -1,3 +1,4 @@
+from flask import Flask, render_template, url_for
 from flask_sqlalchemy import SQLAlchemy
 #from forms import CadastroUsuarioForm
 
@@ -24,12 +25,11 @@ def index():
     return render_template('index.html')
 
 
-'''@app.route('/cadastrar', methods=['GET', 'POST'])
+@app.route('/cadastrar', methods=['GET', 'POST'])
 def cadastrar():
     form = CadastroUsuarioForm()
     
     return render_template('register.html', form=form)
-'''
 
 
 
