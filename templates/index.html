@@ -52,10 +52,10 @@
      <body>
 	   		<div id = "menu">
 				   <center> <ul>
-					    <li><a href = "file:///home/higorcastro/Downloads/Index.html">Home</a></li>
-						<li><a href = "_links/_Sobre.html">Sobre</a></li>
-						<li><a href ="_links/_Procedimentos.html" > Procedimentos </a></li>
-						<li><a href ="https://mmo.com.br/pt-br/blog/176-as-novidades-da-odontologia-voce-esta-por-dentro" target="_blank">Publicidade</a></li>
+					    <li><a href = "/">Home</a></li>
+						<li><a href = "/sobre">Sobre</a></li>
+						<li><a href ="/procedimentos" > Procedimentos </a></li>
+						
 						
 				   </ul> </center>
 		    </div>
@@ -64,7 +64,7 @@
 		  <center> <h1> Saúde Odontológica </h1> </center>
 				   
 		  <div id="conteudo">		
-			 <center> <img id="image1"src="_image/Higiene-Bucal.png" /> </center>
+			 <center> <img id="image1"src="{{ url_for('static',filename='_image/Higiene-Bucal.png')}}" /> </center>
 				
 			</div>
 			

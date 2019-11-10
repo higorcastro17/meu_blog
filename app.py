@@ -21,8 +21,19 @@ class User(db.Model):
         return '<User %r>' % self.username
 
 @app.route('/')
+@app.route('/index')
 def index():
     return render_template('index.html')
+
+@app.route('/sobre')
+def sobre():
+    return render_template('sobre.html')
+
+@app.route('/procedimentos')
+def procedimentos():
+    return render_template('procedimentos.html')
+
+
 
 
 @app.route('/cadastrar', methods=['GET', 'POST'])
